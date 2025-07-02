@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 250px; /* Sidebar width */
+    right: 0;
+    height: 60px;
+    background-color: #3a86ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 6px rgba(58, 134, 255, 0.5);
+    z-index: 1000;
+}
+
+.header .profile {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header .profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #264653;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.sidebar .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #f4a261;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 14px 25px;
+    color: #f1faee;
+    font-weight: 600;
+    margin-bottom: 6px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background-color: #2a9d8f;
+    border-left-color: #f4a261;
+    color: white;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 80px 40px 40px; /* top space for fixed header */
+    min-height: 100vh;
+    background-color: #e9ecef;
+}
+
+.footer {
+    text-align: center;
+    padding: 12px 0;
+    color: #6c757d;
+    border-top: 1px solid #dee2e6;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Utility */
+.text-primary {
+    color: #3a86ff;
+}
+
+.btn {
+    background-color: #3a86ff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2f6ecc;
+}

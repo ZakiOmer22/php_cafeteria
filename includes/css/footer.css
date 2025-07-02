@@ -1,0 +1,14 @@
+.footer {
+  margin-left: 220px; /* same width as sidebar */
+  padding: 18px 24px;
+  background-color: #2f3e46; /* dark slate */
+  color: #a8dadc;
+  font-family: 'Lucida Sans', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.875rem;
+  text-align: center;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 220px);
+  user-select: none;
+}

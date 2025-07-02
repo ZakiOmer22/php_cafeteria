@@ -1,0 +1,88 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.header-bar {
+  height: 80px;
+  background-color: #2f3e46;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  z-index: 900;
+  transition: left 0.3s ease;
+}
+
+.sidebar-collapsed .header-bar {
+  left: 80px;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffffcc;
+}
+
+.sidebar-toggle-btn {
+  background: none;
+  border: none;
+  color: #ffffffaa;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.profile-logout-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff55;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+.username {
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+}
+
+.user-role {
+  color: #bbbbbb;
+  font-size: 13px;
+}
+
+.logout-form {
+  margin-top: 3px;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #ffffff33;
+  color: #ffffffcc;
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
